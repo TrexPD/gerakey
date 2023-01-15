@@ -1,36 +1,45 @@
-# Gerakey: Gerador de senha e token acesso!
+# Gerakey: Gerador de keys e tokens de acesso!
 
-#### Script feito com python para gerar senhas aleatórias e tokens de acesso bastante personalizáveis!
+#### O gerakey é um app CLI feito com python com a lib click, pode ser usado para gerar keys e tokens de acesso aleatórias bastante personalizáveis!
 
 ### Bibliotecas usadas:
 
 ```string```
+```click```
+```rich```
+```date/time```
 ```random```
+```time```
+
+### Instalação:
+
+#### Entre na pasta/diretório gerakey e digite o comando abaixo como ADM no windows ou root no linux e afins.
+
+<div style="background-color: black; color:white; padding: 15px; border-radius: 5px; text-align: left; font-size: 13px">python setup.py install</div> 
 
 ### Uso na prática:
 
-#### Parâmetros:
+#### Parâmetros opcionais:
 
-- **pontuacao: bool** = Ative ou desative a pontuação! (por padrão "True")
-- **numeros: bool** = Ative ou desative os números! (por padrão "True")
-- **salvar: bool** = Salva os seus tokens em um arquivo '.guf'! (por padrão "False")
-- **tamanho: int** = Defina o tamanho do seu token! (por padrão "8")
-- **remdigito: str** = Remover algum digito específico! 
-- **rempontuacao: str** = Remover alguma pontuação específica!
-
+```
+-p, --pontuacao      BOLL     Adiciona ou remove pontuações. (por padrão "False")
+-d, --digitos        BOLL     Adiciona ou remove os números. (por padrão "False")
+-s, --salvar         BOLL     Salva a key/token em um arquivo ".gpuf"! (por padrão "False")
+-t, --tamanho        INTEGER  Define o tamanho da sua key/token. (por padrão 12)
+-rd, --remdigito     TEXT     Remove digitos. Ex: 0..9!
+-rp, --rempontuacao  TEXT     Remove pontuações. Ex: "#%&*@<>"
+--help                        Show this message and exit.
+```
 
 #### Entrada dos dados e chamando a função!
-```
-senha: str = gerador_keys(remdigito='09', pontuacao=False, salvar=True, tamanho=15)
-print(senha)
-```
+
+<div style="background-color: black; color:white; padding: 15px; border-radius: 5px; text-align: left; font-size: 13px">gerakey -d -s -t 20</div>
 
 #### Ouput:
 ```
-O seu token foi salvo no arquivo 'senha.guf' com sucesso!
+O seu token foi salvo no arquivo 'password.gpuf' com sucesso!
 
-Key: CEv6WpTxa8vOOJe
----------------------------------------------------------
+Key/Token: Viu8eTW9Q85tdY60o34M
 ```
 
 
