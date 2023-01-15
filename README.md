@@ -15,7 +15,9 @@
 
 #### Entre na pasta/diretório gerakey e digite o comando abaixo como ADM no windows ou root no linux e afins.
 
-<div style="background-color: black; color:white; padding: 15px; border-radius: 5px; text-align: left; font-size: 13px">python setup.py install</div> 
+<!-- <div style="background-color: black; color:white; padding: 15px; border-radius: 5px; text-align: left; font-size: 13px">python setup.py install</div>  -->
+
+```python setup.py install```
 
 ### Uso na prática:
 
@@ -32,8 +34,10 @@
 ```
 
 #### Entrada dos dados e chamando a função!
+<!-- 
+<div style="background-color: black; color:white; padding: 15px; border-radius: 5px; text-align: left; font-size: 13px">gerakey -d -s -t 20</div> -->
 
-<div style="background-color: black; color:white; padding: 15px; border-radius: 5px; text-align: left; font-size: 13px">gerakey -d -s -t 20</div>
+```gerakey -d -s -t 20```
 
 #### Ouput:
 ```
