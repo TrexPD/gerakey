@@ -13,11 +13,15 @@
 
 ### Instalação:
 
+#### Clone o projeto para o repositório local (seu PC).
+
+```git clone https://github.com/TrexPD/gerakey.git```
+
 #### Entre na pasta/diretório gerakey e digite o comando abaixo como ADM no windows ou root no linux e afins.
 
-<!-- <div style="background-color: black; color:white; padding: 15px; border-radius: 5px; text-align: left; font-size: 13px">python setup.py install</div>  -->
-
 ```python setup.py install```
+
+<!-- <div style="background-color: black; color:white; padding: 15px; border-radius: 5px; text-align: left; font-size: 13px">python setup.py install</div>  -->
 
 ### Uso na prática:
 
