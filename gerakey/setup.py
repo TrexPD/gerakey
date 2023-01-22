@@ -1,10 +1,12 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='Gerakey CLI APP',
-    version='0.0.3',
+    name='gerakey',
+    version='0.0.4',
     license='MIT',
     author='Paulo Daniel',
+    platforms=['Windows', 'Linux', 'BSD'],
+    url='https://github.com/TrexPD/gerakey.git',
     download_url='https://github.com/TrexPD/gerakey.git',
     description='App CLI para gerar senhas, keys ou token de maneira aleatória!',
     packages=find_packages(),
