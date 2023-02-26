@@ -2,8 +2,8 @@ from setuptools import setup, find_packages
 
 setup(
     name='gerakey',
-    version='0.0.4',
-    license='MIT',
+    version='0.0.8',
+    license='BSD 3-Clause',
     author='Paulo Daniel',
     platforms=['Windows', 'Linux', 'BSD'],
     url='https://github.com/TrexPD/gerakey.git',

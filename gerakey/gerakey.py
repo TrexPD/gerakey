@@ -2,6 +2,7 @@ from string import ascii_letters, digits, punctuation
 from rich.console import Console
 from datetime import datetime
 from random import choices
+from pathlib import Path
 from rich import print
 from time import sleep
 import click
@@ -47,7 +48,7 @@ def gerador_keys(
     senha: str = f"{''.join(choices(ascii_letters + p + d, k=tamanho))[::-1]}"
     if salvar:
         data_atual = datetime.now().strftime(r"%d/%m/%Y %X.%f")
-        with open('password.gpuf', 'at', encoding='utf-8') as arquivo:
+        with open(f'{Path(Path.cwd(), "password.gpuf")}', 'at', encoding='utf-8') as arquivo:
             arquivo.write('[Token]:\n')
             arquivo.write(f'\t"date/time": "{data_atual}";\n')
             arquivo.write(f'\t"key": "{senha}";\n\n')
@@ -57,4 +58,3 @@ def gerador_keys(
     with console.status('Gerando sua [bold]key/token[/], aguarde...'):
         sleep(1.5)
     print(f'\n[bold]Key/Token:[/] [yellow]{senha}[/]')
-    
